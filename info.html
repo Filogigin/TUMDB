@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations sur le contenu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+
+<body>
+    <header class="navigation-header">
+      <a class="logo" href="index.html">TUMBD</a>
+      <nav>
+        <div class="selectors-container">
+          <a href="catalogue.html?type=movie">Films</a>
+          <a href="catalogue.html?type=tv">TV</a>
+        </div>
+        <div class="search-container">
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="editorial-wrapper">
+        <article class="media-card">
+
+            <div class="poster-3d-container">
+                <figure class="media-visual">
+                    <img id="film-poster" src="./public/images/poster_not_found.png" alt="Affiche du film">
+                    <!-- GOOD -->
+                </figure>
+            </div>
+
+            <div class="media-data">
+
+                <header class="data-header">
+                    <div class="title-wrapper">
+                        <h1 id="film-title" class="script-heading main-title"></h1>
+                        <!-- GOOD -->
+                    </div>
+                    <div class="rating-badge">
+                        <span id="film-rating" class="rating-value"></span>
+                    </div>
+                </header>
+
+                <div class="release-info">
+                    <p id="film-release-date"></p>
+                    <!-- GOOD -->
+                </div>
+
+                <div class="synopsis-section">
+                    <h2 id="film-synopsis-label" class="script-heading sub-heading">Synopsys</h2>
+                    <p id="film-synopsis-text" class="body-text"></p>
+                    <!-- GOOD -->
+                </div>
+
+                <div class="interaction-layer">
+                    <button id="film-favorite-btn" class="btn-icon" aria-label="Favoris">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <footer class="data-footer">
+                    <div class="footer-column">
+                        <h3 id="film-director-label" class="script-heading sub-heading">Réalisateur(s) / Réalisatrice(s)
+                        </h3>
+                        <p id="film-director-name" class="body-text"></p>
+                        <!-- TODO : Mettre la liste des directors (déjà faite, s'inspirer de TMBD) -->
+                    </div>
+                    <div class="footer-column">
+                        <h3 id="film-genres-label" class="script-heading sub-heading">Genre(s)</h3>
+                        <ul id="film-genres-list" class="body-text styled-list"></ul>
+                        <!-- GOOD -->
+                    </div>
+                </footer>
+
+            </div>
+        </article>
+    </div>
+
+    <section id="actors-info" class="container-carousel-classic">
+        <h1> Acteurs</h1>
+    </section>
+
+    <section id="recommendations" class="container-carousel-classic">
+        <h1 class="title-script">Recommandations</h1>
+
+    </section>
+
+          <footer class="site-footer">
+    <div class="footer-grid">
+
+      <div class="footer-column">
+        <h2 class="ruled-heading">TUMBD</h2>
+        <p class="footer-text">
+          The unofficial<br>
+          movie data<br>
+          base
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h2 class="ruled-heading">API:</h2>
+        <a href="https://www.themoviedb.org/?language=fr" class="footer-link">TMBD</a>
+      </div>
+
+      <div class="footer-column">
+        <h2 class="ruled-heading">Made by</h2>
+        <p class="footer-text">
+          GALIANO Enzo,
+          GRAVER Nicolas
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+    <script type="module" src="src/controller/info.js"></script>
+</body>
+
+</html>
