@@ -1,5 +1,4 @@
-# Base de code pour le TP-API (R4.A.10)
 
-Base de code pour le **TP-API - Développement d'une interface pour API publique**
+Projet étudiant, en 2ème année, réalisé en binôme (Enzo G. et Nicolas G.). L'objectif du projet étudiant est d'utiliser une API REST, nous avons utilisés l'API "TMDB", pour afficher les films, les séries, les acteurs, ect...
 
-Ressource R4.A.10 Compléments Web JavaScript côté client (IUT INFO de Grenoble)
+Il n'y a pas la clef API dans le projet
